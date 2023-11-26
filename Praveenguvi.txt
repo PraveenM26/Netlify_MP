@@ -1,0 +1,90 @@
+var obj = {"name":"john","age":23}
+// for in loop is applicable for Objects as well as arrays
+// for loop is applicable only for arrays
+//Where to apply:k:v
+// Syntax:for(var key in Object){}
+// box method is always used in printing of the objects
+for(var a in obj){
+console.log(a,obj[a]);
+}
+// for loop is bi-directional
+// for in loop is uni-directonal
+
+// OOP 
+//Object oriented Programming
+// Encapsulation
+// Inheritance
+//Polymorphism
+
+// Encapsulation: Protection Specifiers
+//Inheritance:parent to child
+//Pollymorphism:
+// Class: it is a collection of properties and Methods
+// Objects: Objects are the real time entity....
+// OOP 
+//Object oriented Programming
+// Encapsulation
+// Inheritance
+//Polymorphism
+
+// Encapsulation: Protection Specifiers
+//Inheritance:parent to child
+//Pollymorphism:
+// Class: it is a collection of properties and Methods
+// Objects: Objects are the real time entity....
+// Syntax: class Classname{}
+// Object syntax: var objectname = new Classname();
+class Car{
+constructor(a,b)
+{
+this.color=a
+this.year=b
+}
+printcolor(){
+return "the color of the car is" +this.color;
+}
+
+
+}
+var swift = new Car("blue",2018);
+
+// To call any method:
+// syntax = objectname.methodname()
+console.log(swift.printcolor());
+
+
+// new is a Keyword:
+// whenever there is a new keyword it will create a fresh Objects
+// To write above structure we should have a class
+
+// Constructors are the special way of assigning values to Objects.
+//this keyword:
+// it is a temproray table
+// it will point to freshly created Objects
+// this is used inside the container to differenciate between key and value
+
+
+//constructor Initialization:
+
+
+// 1. create a class called student which consist of following properties
+// a. studentname
+// b. regno
+// c. emailid
+// d. address
+// also create a method which will print the student name along with registration number
+class Student{
+constructor(a,b,c,d){
+  this.studentname = a;
+  this.regno = b;
+  this.email = c;
+  this.address = d;
+}
+
+addr(){
+return "The name of the student is"+this.studentname+"and Reg No is"+this.regno;
+}
+}
+
+var s1= new Student("john",2345,"john@guvi.com","chennai");
+console.log(s1.addr());
